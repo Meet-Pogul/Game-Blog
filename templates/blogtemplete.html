@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+
+    Blog {% block blogno %}
+
+{% endblock %}
+
+
+{% endblock %}
+
+
+{% block style %}
+    p {
+    font-size: 20px;
+    }
+{% endblock %}
+
+
+
+{% block body %}
+    <div class="container-fluid px-0">
+
+
+        {% block image %}
+
+        {% endblock %}
+
+
+    </div>
+
+    <h3 class="pb-4 my-4 font-italic border-bottom text-center">
+        From the MSP Gaming Community
+    </h3>
+
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="blog-post mb-4">
+
+
+                {% block blogbody %}
+
+                {% endblock %}
+
+
+            </div><!-- /.blog-post -->
+        </div>
+    </main>
+{% endblock body %}
